@@ -1,10 +1,8 @@
 import os
-
 import requests
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from prefect import task, flow
-
 from taxifare.interface.main import evaluate, preprocess, train
 from taxifare.ml_logic.registry import mlflow_transition_model
 from taxifare.params import *
