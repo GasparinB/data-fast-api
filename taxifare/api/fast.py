@@ -47,4 +47,4 @@ def predict(
 
 @app.get("/")
 def root():
-    return {'greeting': 'Hello'}
+    return dict(greeting ='Hello')
